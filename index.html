@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stacked-Cards-Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- LEFT CONTROLS -->
+    <div class="side-controls">
+      <button id="add-note">+</button>
+      <button id="upBtn">↑</button>
+      <button id="downBtn">↓</button>
+    </div>
+
+    <!-- STACKED CARDS -->
+    <div class="stack-wrapper">
+
+
+
+    </div>
+
+    <!-- COLOR DOTS -->
+    <div class="color-dots">
+      <span class="dot black"></span>
+      <span class="dot purple"></span>
+      <span class="dot orange"></span>
+      <span class="dot green"></span>
+    </div>
+
+  </div>
+
+  <!-- FORM (HIDDEN) -->
+  <div class="form-container">
+    <form action="">
+      <h2>New Call</h2>
+
+      <label>Image URL</label>
+      <input required type="text" placeholder="https://example.com/image.jpg">
+
+      <label>Full Name</label>
+      <input required type="text" placeholder="Enter full name">
+
+      <label>Home Town</label>
+      <input required type="text" placeholder="Enter home town">
+
+      <label>Purpose</label>
+      <input required type="text" placeholder="Quick appointment note">
+
+      <label>Category</label>
+      <div class="radio-list">
+
+        <label class="radio-item emergency">
+          <input required type="radio" name="category"  value="Emergency">
+          Emergency
+        </label>
+
+        <label class="radio-item important">
+          <input required type="radio" name="category" value="Important">
+          Important
+        </label>
+
+        <label class="radio-item urgent">
+          <input required type="radio" name="category" value="Urgent">
+          Urgent
+        </label>
+
+        <label class="radio-item norush">
+          <input required type="radio" name="category" value="No Rush">
+          No Rush
+        </label>
+
+      </div>
+
+
+      
+      <button type="submit" class="create-btn">Create Note</button>
+      <button type="button" class="close-btn">Close</button>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
