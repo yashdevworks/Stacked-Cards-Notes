@@ -1,5 +1,5 @@
 console.log("js loaded")
-// ALL VARIABLES AND DOC SELECTION
+// ALL VARIABLES AND DOC SELECTIONS
 
 
 let addNote = document.querySelector("#add-note");
